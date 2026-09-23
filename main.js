@@ -7736,9 +7736,6 @@
   function so({ items: e2 }) {
     return (0, import_jsx_runtime4.jsx)("ol", { className: "file-steps", children: e2.map((t, r) => (0, import_jsx_runtime4.jsxs)("li", { children: [(0, import_jsx_runtime4.jsx)("span", { className: "file-step-n", children: r + 1 }), (0, import_jsx_runtime4.jsx)("span", { children: t })] }, r)) });
   }
-  function uo({ caption: e2, options: t, rows: r }) {
-    return (0, import_jsx_runtime4.jsx)("div", { className: "file-table-scroll", role: "region", "aria-label": e2, tabIndex: 0, children: (0, import_jsx_runtime4.jsxs)("table", { className: "file-table", children: [(0, import_jsx_runtime4.jsx)("caption", { className: "file-visually-hidden", children: e2 }), (0, import_jsx_runtime4.jsx)("thead", { children: (0, import_jsx_runtime4.jsxs)("tr", { children: [(0, import_jsx_runtime4.jsx)("th", { scope: "col", children: (0, import_jsx_runtime4.jsx)("span", { className: "file-visually-hidden", children: "Attribute" }) }), t.map((n) => (0, import_jsx_runtime4.jsxs)("th", { scope: "col", children: [(0, import_jsx_runtime4.jsx)("span", { className: "file-strong", children: n.name }), (0, import_jsx_runtime4.jsx)("span", { className: "file-secondary", children: n.number })] }, n.number))] }) }), (0, import_jsx_runtime4.jsx)("tbody", { children: r.map((n) => (0, import_jsx_runtime4.jsxs)("tr", { children: [(0, import_jsx_runtime4.jsx)("th", { scope: "row", children: n.label }), n.values.map((a, o) => (0, import_jsx_runtime4.jsx)("td", { className: n.best === o ? "is-best" : void 0, children: a }, o))] }, n.label)) })] }) });
-  }
   function Te2({ items: e2, label: t, layout: r = "grid", bleed: n = r === "strip" && e2.length > 1 }) {
     let a = Ge2(), o = ["file-photos", e2.length === 1 && "is-single", r === "strip" && n && "file-bleed"].filter(Boolean).join(" ");
     return (0, import_jsx_runtime4.jsx)("div", { ...r === "strip" ? a : {}, className: o, "data-layout": r, role: "region", "aria-label": t, tabIndex: r === "strip" && e2.length > 1 ? 0 : void 0, children: e2.map((i) => (0, import_jsx_runtime4.jsx)("img", { src: i.src, alt: i.alt, style: pe2(i), loading: "lazy" }, i.src)) });
@@ -11354,9 +11351,9 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     ["6", "\u05DE\u05E0\u05EA\u05D5\u05E0\u05D9 \u05E9\u05D8\u05D7 \u05DC\u05DE\u05E6\u05D2\u05EA \u05D4\u05E0\u05D4\u05DC\u05D4 \u05E7\u05E6\u05E8\u05D4", "\u05D4\u05D5\u05E4\u05DB\u05D9\u05DD \u05D7\u05D5\u05DE\u05E8 \u05D0\u05E8\u05D5\u05DA \u05DC\u05D7\u05DE\u05E9 \u05E9\u05E7\u05D5\u05E4\u05D9\u05D5\u05EA \u05E9\u05DE\u05D5\u05D1\u05D9\u05DC\u05D5\u05EA \u05DC\u05D4\u05D7\u05DC\u05D8\u05D4 \u05D0\u05D7\u05EA \u05D1\u05E8\u05D5\u05E8\u05D4."]
   ];
   var prices = [
-    { number: 1, name: "\u05DE\u05D7\u05D6\u05D5\u05E8 \u05DE\u05D9\u05D9\u05E1\u05D3\u05D9\u05DD", detail: "\u05DE\u05D7\u05D9\u05E8 \u05D4\u05E9\u05E7\u05D4 \u05DC-3 \u05D4\u05E8\u05D0\u05E9\u05D5\u05E0\u05D9\u05DD \u05D1\u05DC\u05D1\u05D3 \xB7 6 \u05E9\u05D1\u05D5\u05E2\u05D5\u05EA, \u05DC\u05D9\u05D5\u05D5\u05D9 \u05D0\u05D9\u05E9\u05D9 \u05D0\u05D7\u05D3 \u05E2\u05DC \u05D0\u05D7\u05D3 (\u05D0\u05E4\u05E9\u05E8 \u05D2\u05DD \u05D1\u05D6\u05D5\u05D2), \u05DE\u05E9\u05D5\u05D1 \u05E6\u05DE\u05D5\u05D3 \u05D5\u05DE\u05D3\u05D9\u05D3\u05EA \u05DC\u05E4\u05E0\u05D9/\u05D0\u05D7\u05E8\u05D9", value: "\u20AA770", market: "\u20AA3,000", badge: "\u05DE\u05D1\u05E6\u05E2 \u05D4\u05E9\u05E7\u05D4 \xB7 3 \u05D4\u05E8\u05D0\u05E9\u05D5\u05E0\u05D9\u05DD \u05D1\u05DC\u05D1\u05D3" },
-    { number: 2, name: "\u05D9\u05D9\u05E9\u05D5\u05DD \u05DE\u05E2\u05DE\u05D9\u05E7", detail: "\u05D4\u05DE\u05D7\u05D6\u05D5\u05E8 + 2 \u05E4\u05D2\u05D9\u05E9\u05D5\u05EA \u05E2\u05D1\u05D5\u05D3\u05D4 \u05E0\u05D5\u05E1\u05E4\u05D5\u05EA \u05E2\u05DC \u05EA\u05D4\u05DC\u05D9\u05DA \u05D0\u05DE\u05D9\u05EA\u05D9 \u05E9\u05DC\u05DB\u05DD", value: "\u20AA1,900", market: "\u20AA6,000", badge: "\u05DE\u05D1\u05E6\u05E2 \u05D4\u05E9\u05E7\u05D4" },
-    { number: 3, name: "\u05D9\u05D9\u05E9\u05D5\u05DD \u05D1\u05E2\u05E1\u05E7", detail: "\u05D0\u05E4\u05D9\u05D5\u05DF, 6 \u05DE\u05E4\u05D2\u05E9\u05D9\u05DD \u05D0\u05D9\u05E9\u05D9\u05D9\u05DD \u05DC\u05DE\u05E0\u05D4\u05DC \u05D5\u05E2\u05D5\u05D1\u05D3 \u05DE\u05E4\u05EA\u05D7 \u05D5\u05EA\u05D1\u05E0\u05D9\u05D5\u05EA \u05DC\u05E6\u05E8\u05DB\u05D9 \u05D4\u05E2\u05E1\u05E7", value: "\u05D4\u05D7\u05DC \u05DE-\u20AA7,500", market: "\u05D4\u05D7\u05DC \u05DE-\u20AA15,000", badge: "\u05DE\u05D1\u05E6\u05E2 \u05D4\u05E9\u05E7\u05D4" }
+    { number: 1, name: "\u05D4\u05DE\u05D7\u05D6\u05D5\u05E8 \u05D4\u05DE\u05DC\u05D0", detail: "3 \u05DE\u05E7\u05D5\u05DE\u05D5\u05EA \u05D1\u05DC\u05D1\u05D3 \u05D1\u05DE\u05D7\u05D6\u05D5\u05E8 \xB7 6 \u05E9\u05D1\u05D5\u05E2\u05D5\u05EA, \u05DC\u05D9\u05D5\u05D5\u05D9 \u05D0\u05D9\u05E9\u05D9 \u05D0\u05D7\u05D3 \u05E2\u05DC \u05D0\u05D7\u05D3 (\u05D0\u05E4\u05E9\u05E8 \u05D2\u05DD \u05D1\u05D6\u05D5\u05D2), \u05DE\u05E9\u05D5\u05D1 \u05E6\u05DE\u05D5\u05D3 \u05D5\u05DE\u05D3\u05D9\u05D3\u05EA \u05DC\u05E4\u05E0\u05D9/\u05D0\u05D7\u05E8\u05D9", value: "\u20AA770", market: "\u20AA3,000", badge: "\u05D4\u05DE\u05D7\u05D6\u05D5\u05E8 \u05D4\u05E7\u05E8\u05D5\u05D1 \xB7 3 \u05DE\u05E7\u05D5\u05DE\u05D5\u05EA" },
+    { number: 2, name: "\u05D9\u05D9\u05E9\u05D5\u05DD \u05DE\u05E2\u05DE\u05D9\u05E7", detail: "\u05D4\u05DE\u05D7\u05D6\u05D5\u05E8 + 2 \u05E4\u05D2\u05D9\u05E9\u05D5\u05EA \u05E2\u05D1\u05D5\u05D3\u05D4 \u05E0\u05D5\u05E1\u05E4\u05D5\u05EA \u05E2\u05DC \u05EA\u05D4\u05DC\u05D9\u05DA \u05D0\u05DE\u05D9\u05EA\u05D9 \u05E9\u05DC\u05DB\u05DD", value: "\u20AA1,900", market: "\u20AA6,000", badge: "\u05DE\u05D7\u05D9\u05E8 \u05D4\u05DE\u05D7\u05D6\u05D5\u05E8 \u05D4\u05E7\u05E8\u05D5\u05D1" },
+    { number: 3, name: "\u05D9\u05D9\u05E9\u05D5\u05DD \u05D1\u05E2\u05E1\u05E7", detail: "\u05D0\u05E4\u05D9\u05D5\u05DF, 6 \u05DE\u05E4\u05D2\u05E9\u05D9\u05DD \u05D0\u05D9\u05E9\u05D9\u05D9\u05DD \u05DC\u05DE\u05E0\u05D4\u05DC \u05D5\u05E2\u05D5\u05D1\u05D3 \u05DE\u05E4\u05EA\u05D7 \u05D5\u05EA\u05D1\u05E0\u05D9\u05D5\u05EA \u05DC\u05E6\u05E8\u05DB\u05D9 \u05D4\u05E2\u05E1\u05E7", value: "\u05D4\u05D7\u05DC \u05DE-\u20AA7,500", market: "\u05D4\u05D7\u05DC \u05DE-\u20AA15,000", badge: "\u05DE\u05D7\u05D9\u05E8 \u05D4\u05DE\u05D7\u05D6\u05D5\u05E8 \u05D4\u05E7\u05E8\u05D5\u05D1" }
   ];
   function PriceRow({ number, name, detail, value, market, badge }) {
     return /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("div", { className: "file-row price-row", children: [
@@ -11375,9 +11372,88 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       ] })
     ] });
   }
+  var mailMeetings = [
+    ["08:00-09:00", "\u05E1\u05D9\u05D5\u05E8 \u05D1\u05D8\u05D9\u05D7\u05D5\u05EA \u05E9\u05D1\u05D5\u05E2\u05D9", "\u05D0\u05EA\u05E8 \u05E6\u05E4\u05D5\u05DF"],
+    ["10:30-11:30", "\u05D9\u05E9\u05D9\u05D1\u05EA \u05EA\u05D9\u05D0\u05D5\u05DD \u05E7\u05D1\u05DC\u05E0\u05D9\u05DD", "\u05DE\u05E9\u05E8\u05D3 \u05D4\u05D0\u05EA\u05E8"],
+    ["14:00-14:45", "\u05E9\u05D9\u05D7\u05D4 \u05E2\u05DD \u05E1\u05E4\u05E7 \u05D7\u05E9\u05DE\u05DC", "\u05D8\u05DC\u05E4\u05D5\u05DF"]
+  ];
+  function MorningMail() {
+    return /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("figure", { className: "mail", "aria-label": "\u05D3\u05D5\u05D2\u05DE\u05D4 \u05DC\u05DE\u05D9\u05D9\u05DC \u05E1\u05D3\u05E8 \u05D9\u05D5\u05DD", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("div", { className: "mail-head", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("span", { className: "mail-dot", "aria-hidden": "true" }),
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("div", { className: "mail-head-text", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("span", { className: "mail-subject", children: "\u05E1\u05D3\u05E8 \u05D4\u05D9\u05D5\u05DD \u05E9\u05DC\u05DA - \u05D9\u05D5\u05DD \u05E9\u05DC\u05D9\u05E9\u05D9" }),
+          /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("span", { className: "mail-meta", children: "\u05EA\u05E7\u05E6\u05D9\u05E8 \u05D1\u05D5\u05E7\u05E8 \xB7 06:00" })
+        ] })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("div", { className: "mail-body", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("section", { className: "mail-sec", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("span", { className: "mail-label", children: "\u05E4\u05D2\u05D9\u05E9\u05D5\u05EA \u05D4\u05D9\u05D5\u05DD" }),
+          /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("ul", { className: "mail-meetings", children: mailMeetings.map(([t, what, where]) => /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("li", { children: [
+            /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("span", { className: "mail-time", children: t }),
+            /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("span", { className: "mail-what", children: what }),
+            /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("span", { className: "mail-where", children: where })
+          ] }, t)) })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("section", { className: "mail-sec", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("span", { className: "mail-label", children: "\u05DE\u05D4 \u05DC\u05D4\u05D1\u05D9\u05D0 \u05D5\u05DC\u05D1\u05D3\u05D5\u05E7" }),
+          /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("ul", { className: "mail-list", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("li", { children: "\u05EA\u05D5\u05DB\u05E0\u05D9\u05D5\u05EA \u05E7\u05D5\u05DE\u05D4 3 \u05D1\u05D2\u05E8\u05E1\u05D4 \u05D4\u05E2\u05D3\u05DB\u05E0\u05D9\u05EA" }),
+            /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("li", { children: "\u05D3\u05D5\u05D7 \u05D4\u05DC\u05D9\u05E7\u05D5\u05D9\u05D9\u05DD \u05DE\u05D4\u05E1\u05D9\u05D5\u05E8 \u05D4\u05E7\u05D5\u05D3\u05DD" }),
+            /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("li", { children: "\u05D4\u05E6\u05E2\u05EA \u05D4\u05DE\u05D7\u05D9\u05E8 \u05E9\u05DC \u05D4\u05E1\u05E4\u05E7, \u05DC\u05E4\u05E0\u05D9 \u05D4\u05E9\u05D9\u05D7\u05D4" })
+          ] })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("section", { className: "mail-sec", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("span", { className: "mail-label", children: "\u05DC\u05D1\u05D9\u05E6\u05D5\u05E2 \u05DC\u05E4\u05E0\u05D9" }),
+          /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("ul", { className: "mail-list", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("li", { children: "\u05DC\u05E9\u05DC\u05D5\u05D7 \u05DC\u05E7\u05D1\u05DC\u05E0\u05D9\u05DD \u05D0\u05EA \u05E0\u05D5\u05E9\u05D0\u05D9 \u05D4\u05D9\u05E9\u05D9\u05D1\u05D4 \u05E2\u05D3 09:30" }),
+            /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("li", { children: "\u05DC\u05D0\u05E9\u05E8 \u05DE\u05D5\u05DC \u05D4\u05DE\u05D4\u05E0\u05D3\u05E1 \u05D0\u05EA \u05DB\u05DE\u05D5\u05D9\u05D5\u05EA \u05D4\u05D1\u05E8\u05D6\u05DC" })
+          ] })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("section", { className: "mail-sec mail-priority", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("span", { className: "mail-label", children: "\u05E2\u05D3\u05D9\u05E4\u05D5\u05EA" }),
+          /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("p", { children: "\u05D0\u05DD \u05D4\u05D9\u05D5\u05DD \u05E0\u05DC\u05D7\u05E5 - \u05D0\u05EA \u05D4\u05E9\u05D9\u05D7\u05D4 \u05E2\u05DD \u05D4\u05E1\u05E4\u05E7 \u05D0\u05E4\u05E9\u05E8 \u05DC\u05D4\u05D6\u05D9\u05D6 \u05DC\u05DE\u05D7\u05E8. \u05D4\u05E1\u05D9\u05D5\u05E8 \u05D5\u05D4\u05D9\u05E9\u05D9\u05D1\u05D4 \u05DC\u05D0 \u05D6\u05D6\u05D9\u05DD." })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("div", { className: "mail-pay", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("span", { className: "mail-label", children: "\u05EA\u05E9\u05DC\u05D5\u05DE\u05D9\u05DD \u05D3\u05D7\u05D5\u05E4\u05D9\u05DD" }),
+          /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("span", { className: "mail-pay-value", children: "\u05D0\u05D9\u05DF" })
+        ] })
+      ] })
+    ] });
+  }
+  function TourReport() {
+    return /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("figure", { className: "report", "aria-label": "\u05D3\u05D5\u05D2\u05DE\u05D4 \u05DC\u05E1\u05D9\u05DB\u05D5\u05DD \u05E1\u05D9\u05D5\u05E8 \u05E9\u05D8\u05D7", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("span", { className: "report-kicker", children: "\u05D5\u05D0\u05D7\u05E8\u05D9 \u05E1\u05D9\u05D5\u05E8 \u05D1\u05E9\u05D8\u05D7" }),
+      /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("span", { className: "report-title", children: "\u05E1\u05D9\u05DB\u05D5\u05DD \u05E1\u05D9\u05D5\u05E8 \u05D1\u05D9\u05E6\u05D5\u05E2" }),
+      /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("span", { className: "report-meta", children: "\u05D9\u05D5\u05DD \u05E9\u05DC\u05D9\u05E9\u05D9 \xB7 \u05E0\u05D5\u05DB\u05D7\u05D9\u05DD: \u05DE\u05E0\u05D4\u05DC \u05E4\u05E8\u05D5\u05D9\u05E7\u05D8, \u05DE\u05E0\u05D4\u05DC \u05D1\u05D9\u05E6\u05D5\u05E2, \u05DE\u05E0\u05D4\u05DC \u05D0\u05EA\u05E8, \u05E7\u05D1\u05DC\u05DF \u05DE\u05E9\u05E0\u05D4" }),
+      /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("span", { className: "report-label", children: "\u05DE\u05E9\u05D9\u05DE\u05D5\u05EA \u05D5\u05D0\u05D7\u05E8\u05D9\u05D5\u05EA" }),
+      /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("ul", { className: "report-tasks", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("li", { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("span", { children: "\u05EA\u05D5\u05DB\u05E0\u05D9\u05D5\u05EA \u05DE\u05E2\u05E7\u05D5\u05EA - \u05E7\u05D9\u05D3\u05D5\u05DD \u05DE\u05D5\u05DC \u05D4\u05DE\u05EA\u05DB\u05E0\u05DF" }),
+          /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("span", { className: "report-owner", children: "\u05DE\u05E0\u05D4\u05DC \u05D1\u05D9\u05E6\u05D5\u05E2" })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("li", { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("span", { children: "\u05E1\u05D9\u05DE\u05D5\u05DF \u05D5\u05D1\u05D3\u05D9\u05E7\u05D5\u05EA \u05DC\u05E4\u05E0\u05D9 \u05D9\u05E6\u05D9\u05E7\u05D4" }),
+          /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("span", { className: "report-owner", children: "\u05DE\u05E0\u05D4\u05DC \u05D0\u05EA\u05E8" })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("li", { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("span", { children: "\u05D4\u05D9\u05E2\u05E8\u05DB\u05D5\u05EA \u05D4\u05D0\u05EA\u05E8 \u05DC\u05D7\u05D5\u05E8\u05E3" }),
+          /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("span", { className: "report-owner", children: "\u05DB\u05D5\u05DC\u05DD" })
+        ] })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("span", { className: "report-label", children: "\u05D1\u05E2\u05D9\u05D5\u05EA \u05E9\u05E2\u05DC\u05D5" }),
+      /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("ol", { className: "report-issues", children: /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("li", { children: [
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("b", { children: "\u05D0\u05D9\u05D8\u05D5\u05DD \u05D1\u05E7\u05D5\u05DE\u05D4 \u05D8\u05DB\u05E0\u05D9\u05EA" }),
+        " - \u05D7\u05E9\u05E9 \u05DC\u05D7\u05D3\u05D9\u05E8\u05EA \u05DE\u05D9\u05DD. ",
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("span", { className: "report-fix", children: "\u05D1\u05D8\u05D9\u05E4\u05D5\u05DC:" }),
+        " \u05DE\u05E0\u05D4\u05DC \u05D4\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05DE\u05D5\u05DC \u05D4\u05D9\u05D5\u05E2\u05E5."
+      ] }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("span", { className: "report-note", children: "\u05DE\u05D4\u05E8\u05E9\u05D9\u05DE\u05D5\u05EA \u05D4\u05DE\u05D1\u05D5\u05DC\u05D2\u05E0\u05D5\u05EA \u05DE\u05D4\u05E1\u05D9\u05D5\u05E8 - \u05DC\u05D3\u05D5\u05D7 \u05DE\u05E1\u05D5\u05D3\u05E8, \u05D1\u05DB\u05DE\u05D4 \u05D3\u05E7\u05D5\u05EA." })
+    ] });
+  }
   function Home() {
     return /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)(import_jsx_runtime15.Fragment, { children: [
-      /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(lo, { title: "\u05D4\u05D4\u05E9\u05E7\u05D4 \u05D1\u05E8\u05D1\u05D9\u05E2\u05D9, 23.9", tone: "note", children: "\u05DE\u05D7\u05D6\u05D5\u05E8 \u05D4\u05DE\u05D9\u05D9\u05E1\u05D3\u05D9\u05DD \u05D4\u05D5\u05D0 \u05DC\u05D9\u05D5\u05D5\u05D9 \u05D0\u05D9\u05E9\u05D9, \u05D0\u05D7\u05D3 \u05E2\u05DC \u05D0\u05D7\u05D3. \u05DE\u05D7\u05D9\u05E8 \u05D4\u05D4\u05E9\u05E7\u05D4 \u20AA770 - \u05DC-3 \u05D4\u05E8\u05D0\u05E9\u05D5\u05E0\u05D9\u05DD \u05D1\u05DC\u05D1\u05D3 (\u05DE\u05D7\u05D9\u05E8 \u05E9\u05D5\u05E7 \u20AA3,000)." }),
+      /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(lo, { title: "\u05D4\u05DE\u05D7\u05D6\u05D5\u05E8 \u05D4\u05E7\u05E8\u05D5\u05D1 \u05E0\u05E4\u05EA\u05D7 \u05D1\u05E8\u05D1\u05D9\u05E2\u05D9, 23.9", tone: "note", children: "\u05DC\u05D9\u05D5\u05D5\u05D9 \u05D0\u05D9\u05E9\u05D9, \u05D0\u05D7\u05D3 \u05E2\u05DC \u05D0\u05D7\u05D3. \u20AA770 \u05DC-3 \u05D4\u05DE\u05E7\u05D5\u05DE\u05D5\u05EA \u05D1\u05DE\u05D7\u05D6\u05D5\u05E8 (\u05DE\u05D7\u05D9\u05E8 \u05E9\u05D5\u05E7 \u20AA3,000)." }),
       /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Te2, { label: "\u05DE\u05D4\u05E2\u05D5\u05DE\u05E1 \u05DC\u05EA\u05D4\u05DC\u05D9\u05DA \u05E2\u05D1\u05D5\u05D3\u05D4", items: [{ src: hero_default, alt: "\u05D4\u05DE\u05D7\u05E9\u05D4 \u05E9\u05DC \u05EA\u05D4\u05DC\u05D9\u05DA \u05E2\u05D1\u05D5\u05D3\u05D4 \u05D4\u05DE\u05D7\u05D1\u05E8 \u05DE\u05E2\u05D8\u05E4\u05EA \u05D1\u05E0\u05D9\u05D9\u05DF, \u05E6\u2019\u05E7\u05DC\u05D9\u05E1\u05D8, \u05DC\u05D5\u05D7 \u05D6\u05DE\u05E0\u05D9\u05DD \u05D5\u05DE\u05E1\u05DE\u05DB\u05D9\u05DD" }] }),
       /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)(Za, { label: "\u05DE\u05D4 \u05D9\u05D5\u05E6\u05D0 \u05DE\u05D6\u05D4", heading: true, children: [
         /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)(Ja, { children: [
@@ -11386,9 +11462,9 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         ] }),
         /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Lt, { items: [
           { label: "\u05DE\u05E9\u05DA", value: "6 \u05E9\u05D1\u05D5\u05E2\u05D5\u05EA" },
-          { label: "\u05DE\u05E4\u05D2\u05E9", value: "30 \u05D3\u05E7\u05D5\u05EA, \u05D0\u05D9\u05E9\u05D9 \u05D5\u05DE\u05D5\u05E7\u05DC\u05D8" },
+          { label: "\u05DE\u05E4\u05D2\u05E9", value: "30 \u05D3\u05E7\u05D5\u05EA, \u05D0\u05D9\u05E9\u05D9" },
           { label: "\u05E4\u05D5\u05E8\u05DE\u05D8", value: "\u05D0\u05D7\u05D3 \u05E2\u05DC \u05D0\u05D7\u05D3, \u05D0\u05E4\u05E9\u05E8 \u05D2\u05DD \u05D1\u05D6\u05D5\u05D2" },
-          { label: "\u05DE\u05E7\u05D5\u05DE\u05D5\u05EA", value: "3 \u05D1\u05DC\u05D1\u05D3, \u05D1\u05DE\u05D7\u05D9\u05E8 \u05D4\u05E9\u05E7\u05D4" }
+          { label: "\u05DE\u05E7\u05D5\u05DE\u05D5\u05EA", value: "3 \u05D1\u05DC\u05D1\u05D3 \u05D1\u05DB\u05DC \u05DE\u05D7\u05D6\u05D5\u05E8" }
         ] })
       ] }),
       /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Za, { label: "\u05DC\u05DE\u05D4 \u05D0\u05D7\u05D3 \u05E2\u05DC \u05D0\u05D7\u05D3", heading: true, children: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Ja, { children: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(to, { children: "\u05D1\u05E7\u05D1\u05D5\u05E6\u05D4 \u05E7\u05E9\u05D4 \u05DC\u05DB\u05D5\u05D5\u05DF \u05DB\u05DC \u05D0\u05D3\u05DD \u05DC\u05D4\u05E6\u05DC\u05D7\u05D4 \u05E2\u05DC \u05D4\u05DE\u05E9\u05D9\u05DE\u05D5\u05EA \u05E9\u05DC\u05D5. \u05D1\u05DC\u05D9\u05D5\u05D5\u05D9 \u05D0\u05D9\u05E9\u05D9 \u05DB\u05DC \u05DE\u05E4\u05D2\u05E9 \u05E0\u05D1\u05E0\u05D4 \u05E2\u05DC \u05D4\u05D7\u05D5\u05DE\u05E8 \u05D4\u05D0\u05DE\u05D9\u05EA\u05D9 \u05E9\u05DC\u05DA, \u05D1\u05E7\u05E6\u05D1 \u05E9\u05DC\u05DA, \u05D5\u05D1\u05DC\u05D9 \u05DC\u05D4\u05E1\u05EA\u05D9\u05E8 \u05D8\u05E2\u05D5\u05D9\u05D5\u05EA \u05DE\u05D5\u05DC \u05D0\u05D7\u05E8\u05D9\u05DD. \u05D0\u05DD \u05E0\u05D5\u05D7 \u05DC\u05DB\u05DD \u05DC\u05D1\u05D5\u05D0 \u05D1\u05D6\u05D5\u05D2 - \u05E9\u05E0\u05D9 \u05D0\u05E0\u05E9\u05D9\u05DD \u05E9\u05E2\u05D5\u05D1\u05D3\u05D9\u05DD \u05D9\u05D7\u05D3 - \u05D2\u05DD \u05D0\u05E4\u05E9\u05E8." }) }) }),
@@ -11403,7 +11479,14 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         "10 \u05D3\u05E7\u05D5\u05EA: \u05D1\u05D5\u05E0\u05D9\u05DD \u05D9\u05D7\u05D3 \u05D0\u05EA \u05D4\u05EA\u05D4\u05DC\u05D9\u05DA \u05D5\u05D4\u05EA\u05D5\u05E6\u05E8 \u05E9\u05DC\u05DA.",
         "5 \u05D3\u05E7\u05D5\u05EA: \u05D1\u05D5\u05D3\u05E7\u05D9\u05DD \u05E2\u05D5\u05D1\u05D3\u05D5\u05EA, \u05DE\u05E1\u05E4\u05E8\u05D9\u05DD, \u05DE\u05D2\u05D1\u05DC\u05D5\u05EA \u05D5\u05D4\u05E6\u05E2\u05D3 \u05D4\u05D1\u05D0."
       ] }) }),
-      /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(lo, { title: "\u05D9\u05E9 \u05DC\u05DA \u05DE\u05E9\u05D9\u05DE\u05D4 \u05E9\u05D7\u05D5\u05D6\u05E8\u05EA \u05DB\u05DC \u05E9\u05D1\u05D5\u05E2?", tone: "note", children: "\u05E9\u05DC\u05D7\u05D5 \u05DC\u05DE\u05E0\u05D3\u05D9 \u05D3\u05D5\u05D2\u05DE\u05D4 \u05D0\u05D7\u05EA: \u05D3\u05D5\u05D7, \u05DE\u05DB\u05EA\u05D1, \u05DC\u05D5\u05F4\u05D6, \u05D4\u05E6\u05E2\u05EA \u05DE\u05D7\u05D9\u05E8 \u05D0\u05D5 \u05E2\u05D3\u05DB\u05D5\u05DF. \u05D4\u05D5\u05D0 \u05D9\u05D2\u05D9\u05D3 \u05D9\u05E9\u05E8 \u05D0\u05DD \u05D4\u05DE\u05D7\u05D6\u05D5\u05E8 \u05DE\u05EA\u05D0\u05D9\u05DD \u05DC\u05DE\u05E9\u05D9\u05DE\u05D4 \u05E9\u05DC\u05DB\u05DD." })
+      /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)(Za, { label: "\u05D3\u05D5\u05D2\u05DE\u05D4 \u05D0\u05DE\u05D9\u05EA\u05D9\u05EA \u05DE\u05DB\u05DC \u05D1\u05D5\u05E7\u05E8", heading: true, children: [
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Ja, { children: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(to, { children: "\u05DB\u05DC \u05D1\u05D5\u05E7\u05E8, \u05DC\u05E4\u05E0\u05D9 \u05E9\u05D0\u05E0\u05D9 \u05D9\u05D5\u05E6\u05D0 \u05DC\u05E9\u05D8\u05D7, AI \u05E2\u05D5\u05D1\u05E8 \u05E2\u05DC \u05D4\u05D9\u05D5\u05DE\u05DF \u05D5\u05D4\u05DE\u05D9\u05D9\u05DC\u05D9\u05DD \u05D5\u05E9\u05D5\u05DC\u05D7 \u05DC\u05D9 \u05D0\u05EA \u05D4\u05D9\u05D5\u05DD \u05D1\u05D3\u05E7\u05D4 \u05E9\u05DC \u05E7\u05E8\u05D9\u05D0\u05D4 - \u05DB\u05DB\u05D4 \u05E9\u05D5\u05DD \u05D3\u05D1\u05E8 \u05D7\u05E9\u05D5\u05D1 \u05DC\u05D0 \u05E0\u05D5\u05E4\u05DC, \u05DC\u05D0 \u05D7\u05E9\u05D1\u05D5\u05E0\u05D9\u05EA \u05E9\u05D7\u05D9\u05DB\u05EA\u05D4 \u05D1\u05DE\u05D9\u05D9\u05DC \u05D5\u05DC\u05D0 \u05DE\u05E9\u05D9\u05DE\u05D4 \u05E9\u05E9\u05DB\u05D7\u05EA\u05D9. \u05D5\u05D0\u05D7\u05E8\u05D9 \u05E1\u05D9\u05D5\u05E8 \u05D0\u05D5 \u05D9\u05E9\u05D9\u05D1\u05D4 \u05D1\u05E9\u05D8\u05D7, \u05D1\u05DE\u05E7\u05D5\u05DD \u05D3\u05E4\u05D9\u05DD \u05DE\u05D1\u05D5\u05DC\u05D2\u05E0\u05D9\u05DD, \u05D0\u05E0\u05D9 \u05E0\u05D5\u05EA\u05DF \u05DC\u05D5 \u05D0\u05EA \u05DE\u05D4 \u05E9\u05E0\u05E8\u05E9\u05DD \u05D5\u05DE\u05E7\u05D1\u05DC \u05D3\u05D5\u05D7 \u05E7\u05E8\u05D9\u05D0 \u05D5\u05D1\u05E8\u05D5\u05E8 - \u05DE\u05D9 \u05D0\u05D7\u05E8\u05D0\u05D9 \u05E2\u05DC \u05DE\u05D4 \u05D5\u05DE\u05D4 \u05E0\u05E9\u05D0\u05E8 \u05E4\u05EA\u05D5\u05D7. \u05D6\u05D4 \u05D7\u05D5\u05E1\u05DA \u05DC\u05D9 \u05D4\u05DE\u05D5\u05DF \u05D6\u05DE\u05DF. \u05D4\u05E4\u05E8\u05D8\u05D9\u05DD \u05DB\u05D0\u05DF \u05DC\u05D4\u05DE\u05D7\u05E9\u05D4." }) }),
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("div", { className: "ex-grid", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(MorningMail, {}),
+          /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(TourReport, {})
+        ] })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(lo, { title: "\u05D9\u05E9 \u05DC\u05DA \u05DE\u05E9\u05D9\u05DE\u05D4 \u05E9\u05D7\u05D5\u05D6\u05E8\u05EA \u05DB\u05DC \u05E9\u05D1\u05D5\u05E2?", tone: "note", children: "\u05E9\u05DC\u05D7\u05D5 \u05DC\u05D9 \u05D3\u05D5\u05D2\u05DE\u05D4 \u05D0\u05D7\u05EA: \u05D3\u05D5\u05D7, \u05DE\u05DB\u05EA\u05D1, \u05DC\u05D5\u05F4\u05D6, \u05D4\u05E6\u05E2\u05EA \u05DE\u05D7\u05D9\u05E8 \u05D0\u05D5 \u05E2\u05D3\u05DB\u05D5\u05DF. \u05D0\u05D2\u05D9\u05D3 \u05DC\u05DB\u05DD \u05D9\u05E9\u05E8 \u05D0\u05DD \u05D4\u05DE\u05D7\u05D6\u05D5\u05E8 \u05DE\u05EA\u05D0\u05D9\u05DD \u05DC\u05DE\u05E9\u05D9\u05DE\u05D4 \u05E9\u05DC\u05DB\u05DD." })
     ] });
   }
   function Program() {
@@ -11417,33 +11500,46 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         "\u05DE\u05E9\u05D9\u05DE\u05EA \u05E9\u05D1\u05D5\u05E2 \u05E2\u05DD \u05DE\u05D3\u05D3 \u05E9\u05D0\u05E4\u05E9\u05E8 \u05DC\u05D1\u05D3\u05D5\u05E7."
       ] }) }) }),
       /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)(Za, { label: "\u05D0\u05D9\u05DA \u05DE\u05D5\u05D3\u05D3\u05D9\u05DD \u05D0\u05DD \u05D6\u05D4 \u05E2\u05D5\u05D1\u05D3", heading: true, children: [
-        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(uo, { caption: "\u05D0\u05D5\u05EA\u05D4 \u05DE\u05E9\u05D9\u05DE\u05D4 \u05DC\u05E4\u05E0\u05D9 \u05D4\u05DE\u05D7\u05D6\u05D5\u05E8 \u05D5\u05D0\u05D7\u05E8\u05D9\u05D5", options: [{ number: 1, name: "\u05DC\u05E4\u05E0\u05D9" }, { number: 2, name: "\u05D0\u05D7\u05E8\u05D9" }], rows: [
-          { label: "\u05D6\u05DE\u05DF", values: ["\u05DB\u05DE\u05D4 \u05DC\u05E7\u05D7 \u05D1\u05E4\u05D5\u05E2\u05DC", "\u05DB\u05DE\u05D4 \u05DC\u05E7\u05D7 \u05E2\u05DD \u05D4\u05EA\u05D4\u05DC\u05D9\u05DA"] },
-          { label: "\u05EA\u05D9\u05E7\u05D5\u05E0\u05D9\u05DD", values: ["\u05DB\u05DE\u05D4 \u05E1\u05D1\u05D1\u05D9\u05DD \u05E0\u05D3\u05E8\u05E9\u05D5", "\u05DB\u05DE\u05D4 \u05E1\u05D1\u05D1\u05D9\u05DD \u05E0\u05D3\u05E8\u05E9\u05D5"] },
-          { label: "\u05D0\u05D9\u05DB\u05D5\u05EA", values: ["\u05DE\u05D4 \u05D4\u05EA\u05E4\u05E1\u05E4\u05E1", "\u05DE\u05D4 \u05D4\u05E6\u2019\u05E7\u05DC\u05D9\u05E1\u05D8 \u05EA\u05E4\u05E1"] },
-          { label: "\u05E9\u05D9\u05DE\u05D5\u05E9 \u05D7\u05D5\u05D6\u05E8", values: ["\u05DE\u05EA\u05D7\u05D9\u05DC\u05D9\u05DD \u05DE\u05D7\u05D3\u05E9", "\u05EA\u05D1\u05E0\u05D9\u05EA \u05E9\u05DE\u05D5\u05E8\u05D4"] }
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Ja, { children: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(to, { children: "\u05D1\u05D5\u05D7\u05E8\u05D9\u05DD \u05DE\u05E9\u05D9\u05DE\u05D4 \u05D0\u05D7\u05EA \u05E9\u05D7\u05D5\u05D6\u05E8\u05EA \u05D0\u05E6\u05DC\u05DA, \u05D5\u05DE\u05D5\u05D3\u05D3\u05D9\u05DD \u05D0\u05D5\u05EA\u05D4 \u05D1\u05EA\u05D7\u05D9\u05DC\u05EA \u05D4\u05DE\u05D7\u05D6\u05D5\u05E8 \u05D5\u05D1\u05E1\u05D5\u05E4\u05D5: \u05DB\u05DE\u05D4 \u05D6\u05DE\u05DF \u05DC\u05E7\u05D7\u05D4 \u05D5\u05DB\u05DE\u05D4 \u05EA\u05D9\u05E7\u05D5\u05E0\u05D9\u05DD \u05E0\u05D3\u05E8\u05E9\u05D5." }) }),
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("div", { className: "ba-grid", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("div", { className: "ba-card is-before", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("span", { className: "ba-title", children: "\u05DC\u05E4\u05E0\u05D9" }),
+            /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("ul", { children: [
+              /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("li", { children: "\u05DB\u05D5\u05EA\u05D1\u05D9\u05DD \u05DE\u05D0\u05E4\u05E1 \u05D1\u05DB\u05DC \u05E4\u05E2\u05DD" }),
+              /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("li", { children: "\u05DB\u05DE\u05D4 \u05E1\u05D1\u05D1\u05D9 \u05EA\u05D9\u05E7\u05D5\u05DF \u05E2\u05D3 \u05E9\u05D6\u05D4 \u05D9\u05D5\u05E6\u05D0" }),
+              /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("li", { children: "\u05D3\u05D1\u05E8\u05D9\u05DD \u05DE\u05EA\u05E4\u05E1\u05E4\u05E1\u05D9\u05DD \u05D1\u05D3\u05E8\u05DA" })
+            ] })
+          ] }),
+          /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("div", { className: "ba-card is-after", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("span", { className: "ba-title", children: "\u05D0\u05D7\u05E8\u05D9" }),
+            /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("ul", { children: [
+              /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("li", { children: "\u05DE\u05EA\u05D7\u05D9\u05DC\u05D9\u05DD \u05DE\u05EA\u05D1\u05E0\u05D9\u05EA \u05E9\u05DE\u05D5\u05E8\u05D4" }),
+              /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("li", { children: "\u05E4\u05D7\u05D5\u05EA \u05E1\u05D1\u05D1\u05D9\u05DD, \u05DB\u05D9 \u05D9\u05E9 \u05EA\u05D4\u05DC\u05D9\u05DA \u05D1\u05E8\u05D5\u05E8" }),
+              /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("li", { children: "\u05E6\u05F3\u05E7\u05DC\u05D9\u05E1\u05D8 \u05EA\u05D5\u05E4\u05E1 \u05D8\u05E2\u05D5\u05D9\u05D5\u05EA \u05DC\u05E4\u05E0\u05D9 \u05E9\u05DC\u05D9\u05D7\u05D4" })
+            ] })
+          ] })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(lo, { title: "\u05D1\u05DC\u05D9 \u05DE\u05E1\u05E4\u05E8\u05D9\u05DD \u05DE\u05D4\u05D0\u05D5\u05D5\u05D9\u05E8", tone: "note", children: "\u05DC\u05D0 \u05DE\u05D1\u05D8\u05D9\u05D7\u05D9\u05DD \u05D7\u05D9\u05E1\u05DB\u05D5\u05DF \u05E7\u05D1\u05D5\u05E2 \u05D0\u05D5 ROI \u05DC\u05E4\u05E0\u05D9 \u05E9\u05E0\u05DE\u05D3\u05D3. \u05DE\u05E4\u05E8\u05E1\u05DE\u05D9\u05DD \u05E8\u05E7 \u05EA\u05D5\u05E6\u05D0\u05D4 \u05E9\u05EA\u05D5\u05E2\u05D3\u05D4, \u05E2\u05DD \u05E1\u05D5\u05D2 \u05D4\u05DE\u05E9\u05D9\u05DE\u05D4 \u05D5\u05D4\u05EA\u05E7\u05D5\u05E4\u05D4." })
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(lo, { title: "\u05D1\u05DC\u05D9 \u05DE\u05E1\u05E4\u05E8\u05D9\u05DD \u05DE\u05D4\u05D0\u05D5\u05D5\u05D9\u05E8", tone: "note", children: "\u05D0\u05E0\u05D9 \u05DC\u05D0 \u05DE\u05D1\u05D8\u05D9\u05D7 \u05D7\u05D9\u05E1\u05DB\u05D5\u05DF \u05E7\u05D1\u05D5\u05E2 \u05D0\u05D5 ROI \u05DC\u05E4\u05E0\u05D9 \u05E9\u05E0\u05DE\u05D3\u05D3. \u05D0\u05E0\u05D9 \u05DE\u05E4\u05E8\u05E1\u05DD \u05E8\u05E7 \u05EA\u05D5\u05E6\u05D0\u05D4 \u05E9\u05EA\u05D5\u05E2\u05D3\u05D4, \u05E2\u05DD \u05E1\u05D5\u05D2 \u05D4\u05DE\u05E9\u05D9\u05DE\u05D4 \u05D5\u05D4\u05EA\u05E7\u05D5\u05E4\u05D4." })
       ] })
     ] });
   }
   function Pricing() {
     return /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)(import_jsx_runtime15.Fragment, { children: [
-      /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)(Za, { label: "\u05DE\u05D7\u05D9\u05E8 \u05D4\u05E9\u05E7\u05D4", heading: true, children: [
+      /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)(Za, { label: "\u05DE\u05D7\u05D9\u05E8\u05D9\u05DD", heading: true, children: [
         /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Ka, { children: prices.map((p) => /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(PriceRow, { ...p }, p.number)) }),
         /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Ja, { children: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(to, { children: "\u05DE\u05D7\u05D9\u05E8\u05D9 \u05D4\u05E9\u05D5\u05E7 \u05DC\u05D4\u05E9\u05D5\u05D5\u05D0\u05D4 \u05DE\u05D1\u05D5\u05E1\u05E1\u05D9\u05DD \u05E2\u05DC \u05DE\u05D7\u05D9\u05E8\u05D5\u05E0\u05D9\u05DD \u05E4\u05D5\u05DE\u05D1\u05D9\u05D9\u05DD \u05D1\u05D9\u05E9\u05E8\u05D0\u05DC, 2026: \u05E7\u05D5\u05E8\u05E1 AI \u05E7\u05D1\u05D5\u05E6\u05EA\u05D9 \u05DC\u05DE\u05E0\u05D4\u05DC\u05D9\u05DD \u20AA2,850, \u05E9\u05D9\u05E2\u05D5\u05E8 AI \u05E4\u05E8\u05D8\u05D9 \u05D0\u05D7\u05D3 \u05E2\u05DC \u05D0\u05D7\u05D3 \u20AA750 \u05DC\u05E9\u05E2\u05D4, \u05D5\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D9\u05D9\u05E9\u05D5\u05DD AI \u05D1\u05E2\u05E1\u05E7 \u05D4\u05D7\u05DC \u05DE-\u20AA15,000." }) }),
         /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)(Ja, { children: [
-          /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(eo, { children: "\u05DC\u05DE\u05D4 \u05D6\u05D4 \u05DE\u05D7\u05D9\u05E8 \u05D4\u05E9\u05E7\u05D4?" }),
-          /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(to, { children: "\u05D6\u05D4 \u05D4\u05DE\u05D7\u05D6\u05D5\u05E8 \u05D4\u05E8\u05D0\u05E9\u05D5\u05DF \u05D1\u05DE\u05D1\u05E0\u05D4 \u05D4\u05D6\u05D4, \u05D5\u05D4\u05DE\u05D7\u05D9\u05E8 \u05E0\u05DE\u05D5\u05DA \u05D1\u05DB\u05D5\u05D5\u05E0\u05D4 \u05DC-3 \u05D4\u05E8\u05D0\u05E9\u05D5\u05E0\u05D9\u05DD: \u05DE\u05E0\u05D3\u05D9 \u05DE\u05E7\u05D1\u05DC \u05DE\u05D3\u05D9\u05D3\u05D4 \u05D0\u05DE\u05D9\u05EA\u05D9\u05EA \u05D5\u05DE\u05E9\u05D5\u05D1 \u05DE\u05DC\u05E7\u05D5\u05D7\u05D5\u05EA \u05DE\u05E9\u05DC\u05DE\u05D9\u05DD, \u05D5\u05D4\u05DD \u05DE\u05E7\u05D1\u05DC\u05D9\u05DD \u05DC\u05D9\u05D5\u05D5\u05D9 \u05D0\u05D9\u05E9\u05D9 \u05E6\u05DE\u05D5\u05D3 \u05D1\u05DE\u05D7\u05D9\u05E8 \u05E9\u05DC\u05D0 \u05D9\u05D7\u05D6\u05D5\u05E8. \u05D4\u05DE\u05D7\u05D9\u05E8 \u05DC\u05D0 \u05E0\u05E9\u05E2\u05DF \u05E2\u05DC \u05D4\u05D1\u05D8\u05D7\u05D5\u05EA \u05D1\u05D0\u05D5\u05D5\u05D9\u05E8." })
+          /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(eo, { children: "\u05DC\u05DE\u05D4 \u05E8\u05E7 3 \u05DE\u05E7\u05D5\u05DE\u05D5\u05EA?" }),
+          /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(to, { children: "\u05D0\u05E0\u05D9 \u05E4\u05D5\u05EA\u05D7 \u05DB\u05DC \u05DE\u05D7\u05D6\u05D5\u05E8 \u05DC-3 \u05DE\u05E9\u05EA\u05EA\u05E4\u05D9\u05DD \u05D1\u05DC\u05D1\u05D3, \u05DB\u05D3\u05D9 \u05E9\u05DB\u05DC \u05D0\u05D7\u05D3 \u05D9\u05E7\u05D1\u05DC \u05DE\u05DE\u05E0\u05D9 \u05DC\u05D9\u05D5\u05D5\u05D9 \u05D0\u05D9\u05E9\u05D9 \u05E6\u05DE\u05D5\u05D3 \u05D5\u05DE\u05D3\u05D9\u05D3\u05D4 \u05D0\u05DE\u05D9\u05EA\u05D9\u05EA \u05E2\u05DC \u05D4\u05DE\u05E9\u05D9\u05DE\u05D4 \u05E9\u05DC\u05D5. \u05D4\u05DE\u05D7\u05D9\u05E8 \u05DC\u05D0 \u05E0\u05E9\u05E2\u05DF \u05E2\u05DC \u05D4\u05D1\u05D8\u05D7\u05D5\u05EA \u05D1\u05D0\u05D5\u05D5\u05D9\u05E8." })
         ] })
       ] }),
       /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Za, { label: "\u05DE\u05D4 \u05DE\u05E7\u05D1\u05DC\u05D9\u05DD", heading: true, children: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Ja, { children: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(ro, { items: [
-        "6 \u05DE\u05E4\u05D2\u05E9\u05D9\u05DD \u05D0\u05D9\u05E9\u05D9\u05D9\u05DD \u05D7\u05D9\u05D9\u05DD \u05D5\u05D4\u05E7\u05DC\u05D8\u05D5\u05EA \u05DC-90 \u05D9\u05D5\u05DD.",
+        "6 \u05DE\u05E4\u05D2\u05E9\u05D9\u05DD \u05D0\u05D9\u05E9\u05D9\u05D9\u05DD \u05D7\u05D9\u05D9\u05DD.",
         "6 \u05DE\u05E6\u05D2\u05D5\u05EA \u05E9\u05D9\u05E2\u05D5\u05E8 \u05D5\u05E2\u05E8\u05DB\u05EA \u05EA\u05D1\u05E0\u05D9\u05D5\u05EA \u05DC\u05E9\u05D9\u05DE\u05D5\u05E9 \u05D7\u05D5\u05D6\u05E8.",
         "\u05D1\u05D3\u05D9\u05E7\u05EA \u05EA\u05D5\u05E6\u05E8 \u05D0\u05D9\u05E9\u05D9\u05EA \u05D0\u05D7\u05EA \u05D1\u05DB\u05DC \u05E9\u05D1\u05D5\u05E2.",
         "\u05DE\u05D3\u05D9\u05D3\u05EA \u05DC\u05E4\u05E0\u05D9/\u05D0\u05D7\u05E8\u05D9 \u05E2\u05DC \u05DE\u05E9\u05D9\u05DE\u05D4 \u05D7\u05D5\u05D6\u05E8\u05EA \u05D0\u05D7\u05EA."
       ] }) }) }),
-      /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(lo, { title: "\u05D4\u05DE\u05D7\u05D6\u05D5\u05E8 \u05DE\u05D5\u05E9\u05E7 \u05D1\u05E8\u05D1\u05D9\u05E2\u05D9, 23.9", tone: "note", children: "\u20AA770 \u05DC-3 \u05D4\u05E8\u05D0\u05E9\u05D5\u05E0\u05D9\u05DD \u05D1\u05DC\u05D1\u05D3 - \u05DE\u05D7\u05D9\u05E8 \u05E9\u05D5\u05E7 \u20AA3,000. \u05DC\u05D1\u05D3\u05D9\u05E7\u05EA \u05D4\u05EA\u05D0\u05DE\u05D4 \u05E9\u05D5\u05DC\u05D7\u05D9\u05DD \u05DC\u05DE\u05E0\u05D3\u05D9 \u05DE\u05E9\u05D9\u05DE\u05D4 \u05D0\u05D7\u05EA \u05D0\u05DE\u05D9\u05EA\u05D9\u05EA \u05DE\u05D4\u05E2\u05D1\u05D5\u05D3\u05D4." })
+      /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(lo, { title: "\u05D4\u05DE\u05D7\u05D6\u05D5\u05E8 \u05D4\u05E7\u05E8\u05D5\u05D1 \u05E0\u05E4\u05EA\u05D7 \u05D1\u05E8\u05D1\u05D9\u05E2\u05D9, 23.9", tone: "note", children: "\u20AA770 \u05DC-3 \u05D4\u05DE\u05E7\u05D5\u05DE\u05D5\u05EA \u05D1\u05DE\u05D7\u05D6\u05D5\u05E8 - \u05DE\u05D7\u05D9\u05E8 \u05E9\u05D5\u05E7 \u20AA3,000. \u05DC\u05D1\u05D3\u05D9\u05E7\u05EA \u05D4\u05EA\u05D0\u05DE\u05D4 \u05E9\u05DC\u05D7\u05D5 \u05DC\u05D9 \u05DE\u05E9\u05D9\u05DE\u05D4 \u05D0\u05D7\u05EA \u05D0\u05DE\u05D9\u05EA\u05D9\u05EA \u05DE\u05D4\u05E2\u05D1\u05D5\u05D3\u05D4." })
     ] });
   }
   function Proof() {
@@ -11465,16 +11561,16 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         "\u05E2\u05D5\u05D1\u05D3\u05D9\u05DD \u05E2\u05DC\u05D9\u05D4 \u05E2\u05DD \u05D4\u05EA\u05D4\u05DC\u05D9\u05DA \u05D1\u05DE\u05D4\u05DC\u05DA \u05D4\u05DE\u05D7\u05D6\u05D5\u05E8.",
         "\u05DE\u05E9\u05D5\u05D5\u05D9\u05DD \u05D1\u05E1\u05D5\u05E3 - \u05D6\u05DE\u05DF, \u05EA\u05D9\u05E7\u05D5\u05E0\u05D9\u05DD \u05D5\u05DE\u05D4 \u05E0\u05EA\u05E4\u05E1 - \u05D5\u05E8\u05D5\u05D0\u05D9\u05DD \u05DE\u05D4 \u05D4\u05E9\u05EA\u05E4\u05E8."
       ] }) }),
-      /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(lo, { title: "\u05D1\u05DC\u05D9 \u05E2\u05D3\u05D5\u05D9\u05D5\u05EA \u05DE\u05D5\u05DE\u05E6\u05D0\u05D5\u05EA", tone: "note", children: "\u05DC\u05D0 \u05EA\u05DE\u05E6\u05D0\u05D5 \u05DB\u05D0\u05DF \u05E6\u05D9\u05D8\u05D5\u05D8\u05D9\u05DD \u05E2\u05DD \u05E9\u05DE\u05D5\u05EA \u05D5\u05DE\u05E1\u05E4\u05E8\u05D9\u05DD \u05E9\u05DC\u05D0 \u05D0\u05D5\u05DE\u05EA\u05D5. \u05E9\u05D9\u05D7\u05EA \u05D4\u05EA\u05D0\u05DE\u05D4 \u05E7\u05E6\u05E8\u05D4 \u05E2\u05DD \u05DE\u05E0\u05D3\u05D9 \u05EA\u05D2\u05D9\u05D3 \u05D9\u05E9\u05E8 \u05D0\u05DD \u05D4\u05DE\u05D7\u05D6\u05D5\u05E8 \u05DE\u05EA\u05D0\u05D9\u05DD \u05DC\u05DE\u05E9\u05D9\u05DE\u05D4 \u05E9\u05DC\u05DB\u05DD." })
+      /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(lo, { title: "\u05D1\u05DC\u05D9 \u05E2\u05D3\u05D5\u05D9\u05D5\u05EA \u05DE\u05D5\u05DE\u05E6\u05D0\u05D5\u05EA", tone: "note", children: "\u05DC\u05D0 \u05EA\u05DE\u05E6\u05D0\u05D5 \u05DB\u05D0\u05DF \u05E6\u05D9\u05D8\u05D5\u05D8\u05D9\u05DD \u05E2\u05DD \u05E9\u05DE\u05D5\u05EA \u05D5\u05DE\u05E1\u05E4\u05E8\u05D9\u05DD \u05E9\u05DC\u05D0 \u05D0\u05D5\u05DE\u05EA\u05D5. \u05D1\u05E9\u05D9\u05D7\u05EA \u05D4\u05EA\u05D0\u05DE\u05D4 \u05E7\u05E6\u05E8\u05D4 \u05D0\u05D2\u05D9\u05D3 \u05DC\u05DB\u05DD \u05D9\u05E9\u05E8 \u05D0\u05DD \u05D4\u05DE\u05D7\u05D6\u05D5\u05E8 \u05DE\u05EA\u05D0\u05D9\u05DD \u05DC\u05DE\u05E9\u05D9\u05DE\u05D4 \u05E9\u05DC\u05DB\u05DD." })
     ] });
   }
   function App() {
     return /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Ya, { children: /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("div", { dir: "rtl", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Ga, { title: "AI \u05E9\u05E2\u05D5\u05D1\u05D3 \u05D1\u05E9\u05D8\u05D7", fact: "\u05D4\u05E9\u05E7\u05D4 \u05D1\u05E8\u05D1\u05D9\u05E2\u05D9, 23.9 \xB7 \u05DC\u05D9\u05D5\u05D5\u05D9 \u05D0\u05D9\u05E9\u05D9 \xB7 3 \u05DE\u05E7\u05D5\u05DE\u05D5\u05EA \u05D1\u05DC\u05D1\u05D3", intro: "\u05DC\u05D9\u05D5\u05D5\u05D9 \u05D0\u05D9\u05E9\u05D9 \u05E7\u05E6\u05E8 \u05DC\u05DB\u05DC \u05DE\u05D9 \u05E9\u05E8\u05D5\u05E6\u05D4 \u05DC\u05D4\u05E4\u05D5\u05DA \u05DE\u05E9\u05D9\u05DE\u05D5\u05EA \u05E9\u05D7\u05D5\u05D6\u05E8\u05D5\u05EA \u05DB\u05DC \u05E9\u05D1\u05D5\u05E2 \u05DC\u05EA\u05D4\u05DC\u05D9\u05DA \u05D1\u05E8\u05D5\u05E8, \u05D1\u05D3\u05D5\u05E7 \u05D5\u05E9\u05D9\u05DE\u05D5\u05E9\u05D9 - \u05E2\u05E6\u05DE\u05D0\u05D9\u05DD, \u05D1\u05E2\u05DC\u05D9 \u05E2\u05E1\u05E7\u05D9\u05DD, \u05E9\u05DB\u05D9\u05E8\u05D9\u05DD \u05D5\u05E6\u05E2\u05D9\u05E8\u05D9\u05DD \u05DE\u05D2\u05D9\u05DC 16." }),
+      /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Ga, { title: "AI \u05E9\u05E2\u05D5\u05D1\u05D3 \u05D1\u05E9\u05D8\u05D7", fact: "\u05DC\u05D9\u05D5\u05D5\u05D9 \u05D0\u05D9\u05E9\u05D9 \xB7 6 \u05E9\u05D1\u05D5\u05E2\u05D5\u05EA \xB7 3 \u05DE\u05E7\u05D5\u05DE\u05D5\u05EA \u05D1\u05DB\u05DC \u05DE\u05D7\u05D6\u05D5\u05E8", intro: "\u05DC\u05D9\u05D5\u05D5\u05D9 \u05D0\u05D9\u05E9\u05D9 \u05E7\u05E6\u05E8 \u05DC\u05DB\u05DC \u05DE\u05D9 \u05E9\u05E8\u05D5\u05E6\u05D4 \u05DC\u05D4\u05E4\u05D5\u05DA \u05DE\u05E9\u05D9\u05DE\u05D5\u05EA \u05E9\u05D7\u05D5\u05D6\u05E8\u05D5\u05EA \u05DB\u05DC \u05E9\u05D1\u05D5\u05E2 \u05DC\u05EA\u05D4\u05DC\u05D9\u05DA \u05D1\u05E8\u05D5\u05E8, \u05D1\u05D3\u05D5\u05E7 \u05D5\u05E9\u05D9\u05DE\u05D5\u05E9\u05D9 - \u05E2\u05E6\u05DE\u05D0\u05D9\u05DD, \u05D1\u05E2\u05DC\u05D9 \u05E2\u05E1\u05E7\u05D9\u05DD, \u05E9\u05DB\u05D9\u05E8\u05D9\u05DD \u05D5\u05E6\u05E2\u05D9\u05E8\u05D9\u05DD \u05DE\u05D2\u05D9\u05DC 16." }),
       /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("nav", { className: "file-nav", "aria-label": "\u05E2\u05DE\u05D5\u05D3\u05D9 \u05D4\u05E7\u05D5\u05E8\u05E1", children: [
         /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(NavLink, { to: "/", end: true, children: "\u05DC\u05DE\u05D4 \u05DC\u05D4\u05E6\u05D8\u05E8\u05E3" }),
         /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(NavLink, { to: "/program", children: "\u05D4\u05EA\u05D5\u05DB\u05E0\u05D9\u05EA" }),
-        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(NavLink, { to: "/pricing", children: "\u05DE\u05D7\u05D9\u05E8 \u05D4\u05E9\u05E7\u05D4" }),
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(NavLink, { to: "/pricing", children: "\u05DE\u05D7\u05D9\u05E8\u05D9\u05DD" }),
         /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(NavLink, { to: "/proof", children: "\u05DC\u05DE\u05D4 \u05D6\u05D4 \u05E2\u05D5\u05D1\u05D3" })
       ] }),
       /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)(Routes, { children: [
@@ -11483,7 +11579,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Route, { path: "/pricing", element: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Pricing, {}) }),
         /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Route, { path: "/proof", element: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Proof, {}) })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(fo, { children: "\u05D0\u05D9\u05DF \u05D7\u05D9\u05D5\u05D1 \u05D3\u05E8\u05DA \u05D4\u05D3\u05E3. \u05DC\u05D1\u05D3\u05D9\u05E7\u05EA \u05D4\u05EA\u05D0\u05DE\u05D4 \u05D5\u05DC\u05E9\u05DE\u05D9\u05E8\u05EA \u05DE\u05E7\u05D5\u05DD \u05DE\u05DE\u05E9\u05D9\u05DB\u05D9\u05DD \u05D1\u05E9\u05D9\u05D7\u05D4 \u05D0\u05D9\u05E9\u05D9\u05EA \u05E2\u05DD \u05DE\u05E0\u05D3\u05D9 \u05D5\u05E9\u05D5\u05DC\u05D7\u05D9\u05DD \u05DE\u05E9\u05D9\u05DE\u05D4 \u05D0\u05D7\u05EA \u05D0\u05DE\u05D9\u05EA\u05D9\u05EA." })
+      /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(fo, { children: "\u05D0\u05D9\u05DF \u05D7\u05D9\u05D5\u05D1 \u05D3\u05E8\u05DA \u05D4\u05D3\u05E3. \u05DC\u05D1\u05D3\u05D9\u05E7\u05EA \u05D4\u05EA\u05D0\u05DE\u05D4 \u05D5\u05DC\u05E9\u05DE\u05D9\u05E8\u05EA \u05DE\u05E7\u05D5\u05DD \u05D3\u05D1\u05E8\u05D5 \u05D0\u05D9\u05EA\u05D9 \u05D9\u05E9\u05D9\u05E8\u05D5\u05EA \u05D5\u05E9\u05DC\u05D7\u05D5 \u05DC\u05D9 \u05DE\u05E9\u05D9\u05DE\u05D4 \u05D0\u05D7\u05EA \u05D0\u05DE\u05D9\u05EA\u05D9\u05EA." })
     ] }) });
   }
 
