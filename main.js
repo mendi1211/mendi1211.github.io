@@ -11451,6 +11451,13 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("span", { className: "report-note", children: "\u05DE\u05D4\u05E8\u05E9\u05D9\u05DE\u05D5\u05EA \u05D4\u05DE\u05D1\u05D5\u05DC\u05D2\u05E0\u05D5\u05EA \u05DE\u05D4\u05E1\u05D9\u05D5\u05E8 - \u05DC\u05D3\u05D5\u05D7 \u05DE\u05E1\u05D5\u05D3\u05E8, \u05D1\u05DB\u05DE\u05D4 \u05D3\u05E7\u05D5\u05EA." })
     ] });
   }
+  var WA_URL = "https://wa.me/972549292903?text=%D7%94%D7%99%D7%99%2C+%D7%A8%D7%90%D7%99%D7%AA%D7%99+%D7%90%D7%AA+%D7%94%D7%93%D7%A3+%D7%A9%D7%9C+AI+%D7%A9%D7%A2%D7%95%D7%91%D7%93+%D7%91%D7%A9%D7%98%D7%97+%D7%95%D7%90%D7%A9%D7%9E%D7%97+%D7%9C%D7%A9%D7%9E%D7%95%D7%A2+%D7%A2%D7%9C+%D7%94%D7%9E%D7%97%D7%96%D7%95%D7%A8";
+  function WaButton({ size }) {
+    return /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("a", { className: "wa-btn" + (size === "small" ? " is-small" : ""), href: WA_URL, target: "_blank", rel: "noopener noreferrer", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("svg", { className: "wa-icon", viewBox: "0 0 24 24", "aria-hidden": "true", children: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("path", { fill: "currentColor", d: "M12 2.2A9.8 9.8 0 0 0 3.6 17l-1.3 4.8 4.9-1.3A9.8 9.8 0 1 0 12 2.2Zm0 17.8a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20Zm4.4-6c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.6.3 2.7 2.7 0 0 0-.9 2c0 1.2.9 2.4 1 2.5.1.2 1.7 2.7 4.2 3.7 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1l-.5-.3Z" }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("span", { children: "\u05D3\u05D1\u05E8\u05D5 \u05D0\u05D9\u05EA\u05D9 \u05D1\u05D5\u05D5\u05D0\u05D8\u05E1\u05D0\u05E4" })
+    ] });
+  }
   function Home() {
     return /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)(import_jsx_runtime15.Fragment, { children: [
       /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(lo, { title: "\u05D4\u05DE\u05D7\u05D6\u05D5\u05E8 \u05D4\u05E7\u05E8\u05D5\u05D1 \u05E0\u05E4\u05EA\u05D7 \u05D1\u05E8\u05D1\u05D9\u05E2\u05D9, 23.9", tone: "note", children: "\u05DC\u05D9\u05D5\u05D5\u05D9 \u05D0\u05D9\u05E9\u05D9, \u05D0\u05D7\u05D3 \u05E2\u05DC \u05D0\u05D7\u05D3. \u20AA770 \u05DC-3 \u05D4\u05DE\u05E7\u05D5\u05DE\u05D5\u05EA \u05D1\u05DE\u05D7\u05D6\u05D5\u05E8 (\u05DE\u05D7\u05D9\u05E8 \u05E9\u05D5\u05E7 \u20AA3,000)." }),
@@ -11572,6 +11579,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   function App() {
     return /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Ya, { children: /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("div", { dir: "rtl", children: [
       /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Ga, { title: "AI \u05E9\u05E2\u05D5\u05D1\u05D3 \u05D1\u05E9\u05D8\u05D7", fact: "\u05DC\u05D9\u05D5\u05D5\u05D9 \u05D0\u05D9\u05E9\u05D9 \xB7 6 \u05E9\u05D1\u05D5\u05E2\u05D5\u05EA \xB7 3 \u05DE\u05E7\u05D5\u05DE\u05D5\u05EA \u05D1\u05DB\u05DC \u05DE\u05D7\u05D6\u05D5\u05E8", intro: "\u05DC\u05D9\u05D5\u05D5\u05D9 \u05D0\u05D9\u05E9\u05D9 \u05E7\u05E6\u05E8 \u05DC\u05DB\u05DC \u05DE\u05D9 \u05E9\u05E8\u05D5\u05E6\u05D4 \u05DC\u05D4\u05E4\u05D5\u05DA \u05DE\u05E9\u05D9\u05DE\u05D5\u05EA \u05E9\u05D7\u05D5\u05D6\u05E8\u05D5\u05EA \u05DB\u05DC \u05E9\u05D1\u05D5\u05E2 \u05DC\u05EA\u05D4\u05DC\u05D9\u05DA \u05D1\u05E8\u05D5\u05E8, \u05D1\u05D3\u05D5\u05E7 \u05D5\u05E9\u05D9\u05DE\u05D5\u05E9\u05D9 - \u05E2\u05E6\u05DE\u05D0\u05D9\u05DD, \u05D1\u05E2\u05DC\u05D9 \u05E2\u05E1\u05E7\u05D9\u05DD, \u05E9\u05DB\u05D9\u05E8\u05D9\u05DD \u05D5\u05E6\u05E2\u05D9\u05E8\u05D9\u05DD \u05DE\u05D2\u05D9\u05DC 16." }),
+      /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("div", { className: "hero-cta", children: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(WaButton, { size: "small" }) }),
       /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("nav", { className: "file-nav", "aria-label": "\u05E2\u05DE\u05D5\u05D3\u05D9 \u05D4\u05E7\u05D5\u05E8\u05E1", children: [
         /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(NavLink, { to: "/", end: true, children: "\u05DC\u05DE\u05D4 \u05DC\u05D4\u05E6\u05D8\u05E8\u05E3" }),
         /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(NavLink, { to: "/program", children: "\u05D4\u05EA\u05D5\u05DB\u05E0\u05D9\u05EA" }),
@@ -11584,7 +11592,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Route, { path: "/pricing", element: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Pricing, {}) }),
         /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Route, { path: "/proof", element: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Proof, {}) })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(fo, { children: "\u05E8\u05D5\u05E6\u05D9\u05DD \u05D0\u05D7\u05D3 \u05DE-3 \u05D4\u05DE\u05E7\u05D5\u05DE\u05D5\u05EA \u05D1\u05DE\u05D7\u05D6\u05D5\u05E8 \u05D4\u05E7\u05E8\u05D5\u05D1? \u05E9\u05DC\u05D7\u05D5 \u05DC\u05D9 \u05DE\u05E9\u05D9\u05DE\u05D4 \u05D0\u05D7\u05EA \u05D0\u05DE\u05D9\u05EA\u05D9\u05EA \u05DE\u05D4\u05E2\u05D1\u05D5\u05D3\u05D4, \u05D5\u05D0\u05D2\u05D9\u05D3 \u05DC\u05DB\u05DD \u05D9\u05E9\u05E8 \u05D0\u05DD \u05D4\u05DE\u05D7\u05D6\u05D5\u05E8 \u05DE\u05EA\u05D0\u05D9\u05DD. \u05D0\u05D9\u05DF \u05D7\u05D9\u05D5\u05D1 \u05D3\u05E8\u05DA \u05D4\u05D3\u05E3." })
+      /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)(fo, { children: [
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("span", { className: "closing-text", children: "\u05E8\u05D5\u05E6\u05D9\u05DD \u05D0\u05D7\u05D3 \u05DE-3 \u05D4\u05DE\u05E7\u05D5\u05DE\u05D5\u05EA \u05D1\u05DE\u05D7\u05D6\u05D5\u05E8 \u05D4\u05E7\u05E8\u05D5\u05D1? \u05E9\u05DC\u05D7\u05D5 \u05DC\u05D9 \u05DE\u05E9\u05D9\u05DE\u05D4 \u05D0\u05D7\u05EA \u05D0\u05DE\u05D9\u05EA\u05D9\u05EA \u05DE\u05D4\u05E2\u05D1\u05D5\u05D3\u05D4, \u05D5\u05D0\u05D2\u05D9\u05D3 \u05DC\u05DB\u05DD \u05D9\u05E9\u05E8 \u05D0\u05DD \u05D4\u05DE\u05D7\u05D6\u05D5\u05E8 \u05DE\u05EA\u05D0\u05D9\u05DD. \u05D0\u05D9\u05DF \u05D7\u05D9\u05D5\u05D1 \u05D3\u05E8\u05DA \u05D4\u05D3\u05E3." }),
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(WaButton, {})
+      ] })
     ] }) });
   }
 
