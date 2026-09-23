@@ -2671,4 +2671,326 @@ body {
   color: var(--ds-ink);
   font-weight: 500;
 }
+.file-card > div[dir=rtl] {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+.file-card > div[dir=rtl] > .file-header + .file-nav {
+  margin-top: -32px;
+}
+.file-nav {
+  margin-bottom: 0;
+}
+.file-card > div[dir=rtl] > .file-nav + * {
+  margin-top: -16px;
+}
+.file-card > div[dir=rtl] > .file-callout + .file-photos {
+  margin-top: -28px;
+}
+.file-group > .file-group-heading {
+  margin-bottom: -10px;
+}
+.file-text > .file-heading {
+  gap: 10px;
+}
+@media (max-width: 600px) {
+  .file-card > div[dir=rtl] {
+    gap: 48px;
+  }
+  .file-card > div[dir=rtl] > .file-header + .file-nav {
+    margin-top: -28px;
+  }
+  .file-card > div[dir=rtl] > .file-nav + * {
+    margin-top: -16px;
+  }
+}
+.ba-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.ba-card {
+  border-radius: 14px;
+  padding: 16px 18px;
+  background: var(--ds-raised);
+}
+.ba-card.is-after {
+  background: color-mix(in srgb, var(--ds-teal) 9%, var(--ds-white));
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ds-teal) 30%, transparent);
+}
+.ba-title {
+  display: block;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: var(--ds-ink);
+}
+.ba-card.is-after .ba-title {
+  color: var(--ds-teal);
+}
+.ba-card ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.ba-card li {
+  position: relative;
+  padding-inline-start: 16px;
+  line-height: 1.5;
+}
+.ba-card li::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0.62em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--ds-ink-3);
+}
+.ba-card.is-after li::before {
+  background: var(--ds-teal);
+}
+@media (max-width: 600px) {
+  .ba-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.file-group > .file-text:has(> .file-heading) {
+  margin-top: 12px;
+}
+.file-text > .file-heading + * {
+  margin-top: -22px;
+}
+@media (max-width: 600px) {
+  .file-facts > div:nth-child(odd) {
+    border-inline-start: none;
+    padding-inline-start: 0;
+  }
+  .file-facts > div:nth-child(even) {
+    padding-inline-start: 14px;
+  }
+  .file-facts > div {
+    border-bottom: 1px solid var(--ds-hairline);
+  }
+  .file-facts > div:nth-last-child(-n+2):nth-child(odd),
+  .file-facts > div:last-child {
+    border-bottom: 0;
+  }
+}
+.mail {
+  margin: 0;
+  background: var(--ds-white);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, .04),
+    0 8px 24px rgba(0, 0, 0, .06),
+    inset 0 0 0 1px var(--ds-hairline);
+}
+.mail-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  background: color-mix(in srgb, var(--ds-teal) 10%, var(--ds-white));
+  border-bottom: 1px solid color-mix(in srgb, var(--ds-teal) 22%, transparent);
+}
+.mail-dot {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--ds-teal);
+  flex-shrink: 0;
+  box-shadow: inset 0 0 0 9px color-mix(in srgb, var(--ds-teal) 55%, var(--ds-white));
+}
+.mail-head-text {
+  display: flex;
+  flex-direction: column;
+}
+.mail-subject {
+  font-weight: 600;
+  color: var(--ds-ink);
+}
+.mail-meta {
+  font-size: 13px;
+  color: var(--ds-ink-3);
+}
+.mail-body {
+  padding: 6px 20px 18px;
+  display: flex;
+  flex-direction: column;
+}
+.mail-sec {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--ds-hairline);
+}
+.mail-label {
+  display: block;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ds-teal);
+  margin-bottom: 8px;
+}
+.mail-meetings,
+.mail-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.mail-meetings li {
+  display: grid;
+  grid-template-columns: 104px 1fr auto;
+  gap: 12px;
+  align-items: baseline;
+}
+.mail-time {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: var(--ds-ink);
+  direction: ltr;
+  text-align: right;
+}
+.mail-what {
+  color: var(--ds-ink);
+}
+.mail-where {
+  color: var(--ds-ink-3);
+  font-size: 13.5px;
+}
+.mail-list li {
+  position: relative;
+  padding-inline-start: 16px;
+  line-height: 1.5;
+}
+.mail-list li::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: .62em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--ds-teal) 60%, var(--ds-white));
+}
+.mail-priority p {
+  margin: 0;
+  line-height: 1.55;
+}
+.mail-pay {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-top: 14px;
+}
+.mail-pay .mail-label {
+  margin: 0;
+}
+.mail-pay-value {
+  font-weight: 600;
+  color: var(--ds-teal);
+}
+@media (max-width: 600px) {
+  .mail-head,
+  .mail-body {
+    padding-inline: 16px;
+  }
+  .mail-meetings {
+    gap: 12px;
+  }
+  .mail-meetings li {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .mail-time {
+    text-align: right;
+    font-size: 14px;
+  }
+  .mail-where {
+    font-size: 13px;
+  }
+}
+.ex-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+.report {
+  margin: 0;
+  padding: 18px;
+  border-radius: 16px;
+  background: var(--ds-raised);
+  display: flex;
+  flex-direction: column;
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+.report-kicker {
+  font-size: 12.5px;
+  color: var(--ds-ink-3);
+}
+.report-title {
+  font-weight: 600;
+  font-size: 15.5px;
+  color: var(--ds-ink);
+  margin-top: 2px;
+}
+.report-meta {
+  color: var(--ds-ink-3);
+  font-size: 12.5px;
+  margin-top: 4px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--ds-hairline);
+}
+.report-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ds-teal);
+  margin: 12px 0 6px;
+}
+.report-tasks,
+.report-issues {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.report-tasks li {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.report-owner {
+  color: var(--ds-ink-3);
+  white-space: nowrap;
+}
+.report-issues b {
+  font-weight: 600;
+}
+.report-fix {
+  color: var(--ds-red);
+  font-weight: 600;
+}
+@media (max-width: 760px) {
+  .ex-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.report-note {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--ds-hairline);
+  color: var(--ds-ink-2);
+  font-size: 13px;
+}
 /*! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com*/
